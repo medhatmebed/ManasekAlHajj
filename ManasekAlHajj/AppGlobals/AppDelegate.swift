@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  ManasekAlHajj
+//  RitesOfPilgrimage
 //
-//  Created by Medhat Mebed on 7/25/19.
+//  Created by Medhat Mebed on 7/24/19.
 //  Copyright © 2019 Medhat Mebed. All rights reserved.
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AppManager.shared().startNetworkReachabilityObserver()
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "تم"
         return true
     }
 
