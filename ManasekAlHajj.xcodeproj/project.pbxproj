@@ -12,6 +12,7 @@
 		8B9026C422E95E58003EC1A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9026C222E95E58003EC1A4 /* Main.storyboard */; };
 		8B9026C622E95E5A003EC1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9026C522E95E5A003EC1A4 /* Assets.xcassets */; };
 		8B9026C922E95E5A003EC1A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9026C722E95E5A003EC1A4 /* LaunchScreen.storyboard */; };
+		B64EEA65F6900B4809B2FC96 /* Pods_ManasekAlHajj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90F6DF82739CCDF6347B66F /* Pods_ManasekAlHajj.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		8B9026C522E95E5A003EC1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B9026C822E95E5A003EC1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B9026CA22E95E5A003EC1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99AEA1B478F53F2D1BFE1683 /* Pods-ManasekAlHajj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManasekAlHajj.release.xcconfig"; path = "Target Support Files/Pods-ManasekAlHajj/Pods-ManasekAlHajj.release.xcconfig"; sourceTree = "<group>"; };
+		D90F6DF82739CCDF6347B66F /* Pods_ManasekAlHajj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManasekAlHajj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9C2F01FA7B8D73BD624437 /* Pods-ManasekAlHajj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManasekAlHajj.debug.xcconfig"; path = "Target Support Files/Pods-ManasekAlHajj/Pods-ManasekAlHajj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64EEA65F6900B4809B2FC96 /* Pods_ManasekAlHajj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85BF420BBBB4C2E31C220D36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED9C2F01FA7B8D73BD624437 /* Pods-ManasekAlHajj.debug.xcconfig */,
+				99AEA1B478F53F2D1BFE1683 /* Pods-ManasekAlHajj.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B9026B222E95E58003EC1A4 = {
 			isa = PBXGroup;
 			children = (
 				8B9026BD22E95E58003EC1A4 /* ManasekAlHajj */,
 				8B9026BC22E95E58003EC1A4 /* Products */,
+				85BF420BBBB4C2E31C220D36 /* Pods */,
+				F4D70A55EE3C07364F11CF95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = ManasekAlHajj;
 			sourceTree = "<group>";
 		};
+		F4D70A55EE3C07364F11CF95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90F6DF82739CCDF6347B66F /* Pods_ManasekAlHajj.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B9026CD22E95E5A003EC1A4 /* Build configuration list for PBXNativeTarget "ManasekAlHajj" */;
 			buildPhases = (
+				59B53312987899E589CBB332 /* [CP] Check Pods Manifest.lock */,
 				8B9026B722E95E58003EC1A4 /* Sources */,
 				8B9026B822E95E58003EC1A4 /* Frameworks */,
 				8B9026B922E95E58003EC1A4 /* Resources */,
+				E326A708DE4F4C84BF2AF302 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59B53312987899E589CBB332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ManasekAlHajj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E326A708DE4F4C84BF2AF302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManasekAlHajj/Pods-ManasekAlHajj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManasekAlHajj/Pods-ManasekAlHajj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ManasekAlHajj/Pods-ManasekAlHajj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B9026B722E95E58003EC1A4 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		8B9026CE22E95E5A003EC1A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9C2F01FA7B8D73BD624437 /* Pods-ManasekAlHajj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		8B9026CF22E95E5A003EC1A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AEA1B478F53F2D1BFE1683 /* Pods-ManasekAlHajj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
