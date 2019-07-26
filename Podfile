@@ -10,5 +10,6 @@ target 'ManasekAlHajj' do
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire'
 pod 'IQDropDownTextField'
+pod 'NVActivityIndicatorView'
 
 end

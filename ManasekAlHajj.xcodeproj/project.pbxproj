@@ -14,6 +14,8 @@
 		8B11FFF922EABCD9008150AF /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11FFF822EABCD9008150AF /* CALayer+Extensions.swift */; };
 		8B1585C222EA995F00D4788C /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1585C122EA995F00D4788C /* DetailsVC.swift */; };
 		8B1585C422EAA24300D4788C /* DirectionMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1585C322EAA24300D4788C /* DirectionMapVC.swift */; };
+		8B2C800F22EB592100F5B43F /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2C800D22EB592100F5B43F /* LoaderView.xib */; };
+		8B2C801022EB592100F5B43F /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C800E22EB592100F5B43F /* LoaderView.swift */; };
 		8B9026D722E95F29003EC1A4 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026D322E95F29003EC1A4 /* Requestable.swift */; };
 		8B9026D822E95F29003EC1A4 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026D422E95F29003EC1A4 /* APIConstants.swift */; };
 		8B9026D922E95F29003EC1A4 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026D522E95F29003EC1A4 /* APIEndPoints.swift */; };
@@ -44,6 +46,8 @@
 		8B11FFF822EABCD9008150AF /* CALayer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
 		8B1585C122EA995F00D4788C /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		8B1585C322EAA24300D4788C /* DirectionMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionMapVC.swift; sourceTree = "<group>"; };
+		8B2C800D22EB592100F5B43F /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		8B2C800E22EB592100F5B43F /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		8B9026BB22E95E58003EC1A4 /* ManasekAlHajj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManasekAlHajj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9026CA22E95E5A003EC1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9026D322E95F29003EC1A4 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 				8BD54BA922EB40D800512EC2 /* LocationMapVC.swift */,
 			);
 			path = MapVC;
+			sourceTree = "<group>";
+		};
+		8B2C800C22EB592100F5B43F /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C800D22EB592100F5B43F /* LoaderView.xib */,
+				8B2C800E22EB592100F5B43F /* LoaderView.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		8B9026B222E95E58003EC1A4 = {
@@ -216,6 +229,7 @@
 		8B9026EF22E95F54003EC1A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B2C800C22EB592100F5B43F /* Loader */,
 				8B9026F722E95F54003EC1A4 /* Fonts */,
 				8B9026F022E95F54003EC1A4 /* Storyboards */,
 				8B0F879222EA6B860048927D /* SearchResultCell.swift */,
@@ -309,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2C800F22EB592100F5B43F /* LoaderView.xib in Resources */,
 				8B90270222E95F54003EC1A4 /* GE_SS_Two_Medium.otf in Resources */,
 				8B9026FF22E95F54003EC1A4 /* LaunchScreen.storyboard in Resources */,
 				8B9026E322E95F3B003EC1A4 /* Assets.xcassets in Resources */,
@@ -367,6 +382,7 @@
 			files = (
 				8B9026FB22E95F54003EC1A4 /* DirectionType.swift in Sources */,
 				8B9026FC22E95F54003EC1A4 /* Mashaer.swift in Sources */,
+				8B2C801022EB592100F5B43F /* LoaderView.swift in Sources */,
 				8BD54BAA22EB40D800512EC2 /* LocationMapVC.swift in Sources */,
 				8B9026FA22E95F54003EC1A4 /* OfficeGroupApartment.swift in Sources */,
 				8B9026E622E95F3B003EC1A4 /* AppDelegate.swift in Sources */,

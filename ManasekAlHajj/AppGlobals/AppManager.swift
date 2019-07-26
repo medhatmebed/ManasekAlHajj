@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class AppManager: NSObject {
-    static let G_APP_NAME = "SearchMovies"
+    static let G_APP_NAME = "الدليل الالكتروني لمشاعر الحج"
     static let APP_COLOR = UIColor(hex: "018EA9")
     
     let webServiceManager = WebServicesManager()
@@ -86,6 +86,28 @@ class AppManager: NSObject {
                 if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
                     rootVC.present(alert, animated: true, completion: nil)
                 }
+            }
+        })
+    }
+    
+    //MARK: - Loading Indicator
+    class func showLoaderForController(_ controller:UIViewController){
+        DispatchQueue.main.async(execute: {
+            if controller.view.viewWithTag(APP_LOADING_VIEW_TAG) != nil {
+                return
+            }
+            let loader = Bundle.main.loadNibNamed("LoaderView", owner: controller, options: nil)?.last as! LoaderView
+            loader.frame = CGRect(x: 0, y: 0, width: controller.view.frame.width, height: controller.view.frame.height)
+            loader.tag = APP_LOADING_VIEW_TAG
+            controller.view.addSubview(loader)
+            loader.showLoader()
+        })
+    }
+    
+    class func hideLoaderForController(_ controller:UIViewController){
+        DispatchQueue.main.async(execute: {
+            if let view = controller.view.viewWithTag(APP_LOADING_VIEW_TAG) {
+                view.removeFromSuperview()
             }
         })
     }

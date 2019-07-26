@@ -85,9 +85,15 @@ class HomeVC: UIViewController {
     
     @IBAction func searchBtnPressed(_ sender: UIButton) {
         
-        self.homeVCRepo.GetOfficeGroupAppartment(mashaerId: String(selectedmashaerId),
-                                                 directionTypeId: String(selectedDirectionTypesId),
-                                                 directionId: String(selectedDirectionsId))
+        if selectedmashaerId == "" {
+            AppManager.displayOkayAlert(title: AppManager.G_APP_NAME, message: "من فضلك ادخل المشعر", forController: self)
+        } else {
+            AppManager.showLoaderForController(self)
+            self.homeVCRepo.GetOfficeGroupAppartment(mashaerId: String(selectedmashaerId),
+                                                     directionTypeId: String(selectedDirectionTypesId),
+                                                     directionId: String(selectedDirectionsId))
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -163,11 +169,19 @@ extension HomeVC : HomeVCRepoDelegate {
     }
     
     func getOfficeGroupAppartmentsSuccess(officGroupAppartments: [OfficeGroupAppartment]) {
-        self.officeGroupAppartment = officGroupAppartments
-        performSegue(withIdentifier: "goToSearchResultVC", sender: nil)
+        AppManager.hideLoaderForController(self)
+        if officGroupAppartments.count > 0 {
+            self.officeGroupAppartment = officGroupAppartments
+            performSegue(withIdentifier: "goToSearchResultVC", sender: nil)
+        } else {
+            AppManager.displayOkayAlert(title: AppManager.G_APP_NAME, message: "لم يتم العثور على البيانات", forController: self)
+        }
+        
     }
     
     func getOfficeGroupAppartmentsSuccessFail(error: String) {
+        AppManager.hideLoaderForController(self)
+        AppManager.displayOkayAlert(title: AppManager.G_APP_NAME, message: "لم يتم العثور على البيانات", forController: self)
         print(error)
     }
     

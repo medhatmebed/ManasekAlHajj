@@ -2,23 +2,29 @@ PODS:
   - Alamofire (4.8.2)
   - IQDropDownTextField (1.1.1)
   - IQKeyboardManagerSwift (6.4.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
 
 DEPENDENCIES:
   - Alamofire
   - IQDropDownTextField
   - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - IQDropDownTextField
     - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
 
-PODFILE CHECKSUM: 6b2d2c12d8da182ff70e2d44ed82760dc04e4c1a
+PODFILE CHECKSUM: 3a2050f6e96fe5d3c1a49eb4e8e8f9663aa3e7fa
 
 COCOAPODS: 1.7.4

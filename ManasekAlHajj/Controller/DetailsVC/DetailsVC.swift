@@ -70,7 +70,7 @@ class DetailsVC: UIViewController {
     
     @IBAction func directionBtnPressed(_ sender: Any) {
         if self.coordinatesLbl.text == " " {
-            AppManager.displayOkayAlert(title: "", message: "لم يتم العثور على احداثيات الموقع", forController: self)
+            AppManager.displayOkayAlert(title: AppManager.G_APP_NAME, message: "لم يتم العثور على احداثيات الموقع", forController: self)
         } else {
             performSegue(withIdentifier: "goToDirection", sender: UIButton())
         }
@@ -79,7 +79,7 @@ class DetailsVC: UIViewController {
     
     @IBAction func locationBtnPressed(_ sender: Any) {
         if self.coordinatesLbl.text == " " {
-            AppManager.displayOkayAlert(title: "", message: "لم يتم العثور على احداثيات الموقع", forController: self)
+            AppManager.displayOkayAlert(title: AppManager.G_APP_NAME, message: "لم يتم العثور على احداثيات الموقع", forController: self)
         } else {
             performSegue(withIdentifier: "goToLocation", sender: UIButton())
         }

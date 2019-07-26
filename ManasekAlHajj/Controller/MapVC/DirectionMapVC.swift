@@ -22,8 +22,8 @@ class DirectionMapVC: UIViewController {
     
     let geoCoder = CLGeocoder()
     var directionsArray: [MKDirections] = []
-    var longitude = -122.41220265239758
-    var latitude = 37.789549869450894
+    var longitude = 0.0
+    var latitude = 0.0
     
     
     override func viewDidLoad() {
