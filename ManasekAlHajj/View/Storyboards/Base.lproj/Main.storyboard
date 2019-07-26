@@ -412,6 +412,9 @@
                                                 <state key="normal" title="بحث">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="searchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Odf-wi-oSo"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-Vl-kN7">
                                                 <rect key="frame" x="45" y="59" width="20" height="20"/>
@@ -487,30 +490,147 @@
                         <outlet property="nationalityTxtField" destination="Kbh-VW-MGd" id="rL7-fN-npT"/>
                         <outlet property="officeOrCampainTxtField" destination="T2k-MB-sw7" id="sIB-h3-Sdv"/>
                         <outlet property="phoneTxtField" destination="CMu-xi-ilf" id="gRj-Vl-8bO"/>
-                        <segue destination="BNA-nT-PTT" kind="show" id="LVO-Xt-Z40"/>
+                        <outlet property="searchBtn" destination="JX9-MV-Lpz" id="iXJ-1P-elR"/>
+                        <segue destination="BNA-nT-PTT" kind="show" identifier="goToSearchResultVC" id="LVO-Xt-Z40"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Search ResultVC-->
         <scene sceneID="ODx-fF-nHw">
             <objects>
-                <viewController id="BNA-nT-PTT" sceneMemberID="viewController">
+                <viewController id="BNA-nT-PTT" customClass="SearchResultVC" customModule="ManasekAlHajj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CZM-wc-e1z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0UI-kW-zqx">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchResultCell" rowHeight="138" id="KgB-U6-Ja3" customClass="SearchResultCell" customModule="ManasekAlHajj" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KgB-U6-Ja3" id="RjG-IH-cth">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="137.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-IR-5dB">
+                                                    <rect key="frame" x="30" y="23" width="354" height="92"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Dy-W7-YIF">
+                                                            <rect key="frame" x="6" y="6" width="342" height="79.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2uh-S0-kOX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="28.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مقر ضيوف وزارة الحج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-m3-ePj">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="18.5"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                            <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qni-PH-Grg">
+                                                                            <rect key="frame" x="0.0" y="26.5" width="342" height="2"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="2" id="ihr-0R-3dN"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-74-tmL">
+                                                                    <rect key="frame" x="0.0" y="36.5" width="342" height="17.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbT-aJ-Qfe">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="17.5"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-47-LXA">
+                                                                            <rect key="frame" x="171" y="0.0" width="171" height="17.5"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-Lw-KtT">
+                                                                    <rect key="frame" x="0.0" y="62" width="342" height="17.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zq-l1-WTa">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="17.5"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-gJ-aAA">
+                                                                            <rect key="frame" x="171" y="0.0" width="171" height="17.5"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="3ps-Lw-KtT" firstAttribute="height" secondItem="vuU-74-tmL" secondAttribute="height" id="Fgp-bL-TxW"/>
+                                                                <constraint firstItem="vuU-74-tmL" firstAttribute="width" secondItem="2uh-S0-kOX" secondAttribute="width" id="gLX-Qg-0jg"/>
+                                                                <constraint firstItem="3ps-Lw-KtT" firstAttribute="width" secondItem="vuU-74-tmL" secondAttribute="width" id="hwr-ax-WUP"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3Dy-W7-YIF" firstAttribute="leading" secondItem="uKk-IR-5dB" secondAttribute="leading" constant="6" id="8Zc-D1-Tdt"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3Dy-W7-YIF" secondAttribute="trailing" constant="6" id="aFY-Gv-aqL"/>
+                                                        <constraint firstItem="3Dy-W7-YIF" firstAttribute="top" secondItem="uKk-IR-5dB" secondAttribute="top" constant="6" id="btd-GV-83J"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3Dy-W7-YIF" secondAttribute="bottom" constant="6.5" id="fUb-1b-97Z"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uKk-IR-5dB" secondAttribute="bottom" constant="12" id="dq7-ch-UYm"/>
+                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="top" secondItem="RjG-IH-cth" secondAttribute="topMargin" constant="12" id="ejA-Yf-XV3"/>
+                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="leading" secondItem="RjG-IH-cth" secondAttribute="leadingMargin" constant="10" id="f2M-M8-Ags"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uKk-IR-5dB" secondAttribute="trailing" constant="10" id="x8n-eY-wY7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mokhayamLbl" destination="uLa-gJ-aAA" id="Ugd-Q3-aqB"/>
+                                            <outlet property="nationalityLbl" destination="0UN-47-LXA" id="ZMM-OM-Cgi"/>
+                                            <outlet property="officeGroupNameLbl" destination="wZM-m3-ePj" id="asM-e0-eu0"/>
+                                            <outlet property="phoneNumberLbl" destination="sbT-aJ-Qfe" id="Jrq-lg-biF"/>
+                                            <outlet property="streetLbl" destination="0Zq-l1-WTa" id="JIw-6b-J6e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BNA-nT-PTT" id="kzd-qt-nXs"/>
+                                    <outlet property="delegate" destination="BNA-nT-PTT" id="RsU-OE-bIn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0UI-kW-zqx" firstAttribute="leading" secondItem="c7a-cI-VL2" secondAttribute="leading" id="7jq-ab-pgL"/>
+                            <constraint firstItem="0UI-kW-zqx" firstAttribute="trailing" secondItem="c7a-cI-VL2" secondAttribute="trailing" id="GL2-O3-ulr"/>
+                            <constraint firstItem="0UI-kW-zqx" firstAttribute="top" secondItem="c7a-cI-VL2" secondAttribute="top" id="RK9-gL-tgI"/>
+                            <constraint firstAttribute="bottom" secondItem="0UI-kW-zqx" secondAttribute="bottom" id="czH-4g-Evu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c7a-cI-VL2"/>
                     </view>
                     <connections>
+                        <outlet property="resultTableView" destination="0UI-kW-zqx" id="vaZ-hr-Rx0"/>
                         <segue destination="3RP-h6-oPd" kind="show" id="VsZ-2M-mQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba5-vd-LLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1815" y="112"/>
+            <point key="canvasLocation" x="1814.4927536231885" y="111.83035714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tgm-ol-fGP">

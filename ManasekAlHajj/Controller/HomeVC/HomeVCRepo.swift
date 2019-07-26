@@ -39,7 +39,7 @@ class HomeVCRepo : WebserviceDataProtocol {
         AppManager.shared().webServiceManager.requestData(envelope: envelope, delegate: self)
     }
     
-    func GetOfficeGroupAppartment(mashaerId: Int,directionTypeId: Int,directionId: Int) {
+    func GetOfficeGroupAppartment(mashaerId: String,directionTypeId: String,directionId: String) {
         let envelope = GetOfficeGroupApparments(pathType: .GetOfficeGroupAppartments(mashaerId: mashaerId,
                                                                                      directionTypeId: directionTypeId,
                                                                                      directionId: directionId))
@@ -87,6 +87,20 @@ class HomeVCRepo : WebserviceDataProtocol {
                 self.delegate?.getDirectionsSuccess(directions: response)
             } else {
                 self.delegate?.getDirectionsFail(error: "failed to get Directions")
+            }
+        }
+        else if envelope.apiPath.contains(ApiPath.GET_GROUP_APPARTMENTS) {
+            if let error = errorMessage {
+                #if DEBUG
+                print(error)
+                #endif
+                self.delegate?.getOfficeGroupAppartmentsSuccessFail(error : error)
+            }
+            if let response = data as? [OfficeGroupAppartment] {
+                print(response)
+                self.delegate?.getOfficeGroupAppartmentsSuccess(officGroupAppartments : response)
+            } else {
+                self.delegate?.getOfficeGroupAppartmentsSuccessFail(error : "failed to get Office Group Appartment")
             }
         }
     }

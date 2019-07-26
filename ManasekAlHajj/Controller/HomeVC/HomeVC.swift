@@ -21,6 +21,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var phoneTxtField: UITextField!
     @IBOutlet weak var nationalityTxtField: UITextField!
     
+    @IBOutlet weak var searchBtn: UIButton!
     
     var mashaerArray : [String]? = [""] {
         didSet {
@@ -49,11 +50,12 @@ class HomeVC: UIViewController {
     }
     var directionsIds = [Int]()
     
-    var selectedmashaerId = 0
-    var selectedDirectionTypesId = 0
-    var selectedDirectionsId = 0
+    var selectedmashaerId = ""
+    var selectedDirectionTypesId = ""
+    var selectedDirectionsId = ""
     
     let homeVCRepo = HomeVCRepo()
+    var officeGroupAppartment = [OfficeGroupAppartment]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,27 +79,40 @@ class HomeVC: UIViewController {
         directionsTxtField.isOptionalDropDown = false
     }
     
+    @IBAction func searchBtnPressed(_ sender: UIButton) {
+        
+        self.homeVCRepo.GetOfficeGroupAppartment(mashaerId: String(selectedmashaerId),
+                                                 directionTypeId: String(selectedDirectionTypesId),
+                                                 directionId: String(selectedDirectionsId))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SearchResultVC {
+            destination.officeGroupAppartment = self.officeGroupAppartment
+        }
+    }
+    
     
 }
 
 extension HomeVC : IQDropDownTextFieldDelegate, IQDropDownTextFieldDataSource {
     func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {
         if textField == self.mashaerTxtField {
-            for index in 0...(mashaerArray?.count ?? 0) - 1 where mashaerArray?[index] == item {
-                self.selectedmashaerId = mashaerIds[index - 1]
+            for index in 1...(mashaerArray?.count ?? 0) - 1 where mashaerArray?[index] == item {
+                self.selectedmashaerId = String(mashaerIds[index - 1])
                 print("selected Mashaer Id is \(selectedmashaerId)")
             }
         }
         else if textField == self.directionTypesTxtField {
-            for index in 0...(directionTypes?.count ?? 0) - 1 where directionTypes?[index] == item {
-                self.selectedDirectionTypesId = directionTypeIds[index - 1]
-                self.homeVCRepo.getDirections(directionTypeId: selectedDirectionTypesId)
+            for index in 1...(directionTypes?.count ?? 0) - 1 where directionTypes?[index] == item {
+                self.selectedDirectionTypesId = String(directionTypeIds[index - 1])
+                self.homeVCRepo.getDirections(directionTypeId: directionTypeIds[index - 1])
                 print("selected Mashaer Id is \(selectedDirectionTypesId)")
             }
         }
         else if textField == self.directionsTxtField {
-            for index in 0...(directions?.count ?? 0) - 1 where directions?[index] == item {
-                self.selectedDirectionsId = directionsIds[index - 1]
+            for index in 1...(directions?.count ?? 0) - 1 where directions?[index] == item {
+                self.selectedDirectionsId = String(directionsIds[index - 1])
                 print("selected Mashaer Id is \(selectedDirectionsId)")
             }
         }
@@ -108,6 +123,8 @@ extension HomeVC : HomeVCRepoDelegate {
     
     func getMashaerSuccess(mashaer: [Mashaer]) {
         self.homeVCRepo.getDirectionTypes()
+        self.mashaerArray = [""]
+        self.mashaerIds.removeAll()
         for item in mashaer {
             self.mashaerArray?.append(item.name ?? "")
             self.mashaerIds.append(item.mashaerID ?? 0)
@@ -119,6 +136,8 @@ extension HomeVC : HomeVCRepoDelegate {
     }
     
     func getDirectionTypesSuccess(directiontypes: [DirectionType]) {
+        self.directionTypes = [""]
+        self.directionTypeIds.removeAll()
         for item in directiontypes {
             self.directionTypes?.append(item.directionTypeName ?? "")
             self.directionTypeIds.append(item.directionTypeID ?? 0)
@@ -130,6 +149,8 @@ extension HomeVC : HomeVCRepoDelegate {
     }
     
     func getDirectionsSuccess(directions: [Directions]) {
+        self.directions = [""]
+        self.directionsIds.removeAll()
         for item in directions {
             self.directions?.append(item.directionName ?? "")
             self.directionsIds.append(item.directionID ?? 0)
@@ -141,7 +162,8 @@ extension HomeVC : HomeVCRepoDelegate {
     }
     
     func getOfficeGroupAppartmentsSuccess(officGroupAppartments: [OfficeGroupAppartment]) {
-        print(officGroupAppartments)
+        self.officeGroupAppartment = officGroupAppartments
+        performSegue(withIdentifier: "goToSearchResultVC", sender: nil)
     }
     
     func getOfficeGroupAppartmentsSuccessFail(error: String) {

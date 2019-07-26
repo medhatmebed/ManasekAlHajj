@@ -32,7 +32,7 @@ internal enum ServicePath: ParameterBodyMaker {
     case GetMashaer
     case GetDirectionTypes
     case GetDirections(directionType : Int)
-    case GetOfficeGroupAppartments(mashaerId : Int,directionTypeId : Int, directionId : Int)
+    case GetOfficeGroupAppartments(mashaerId : String,directionTypeId : String, directionId : String)
     
     func httpBodyEnvelop() -> [String : Any]? {
         switch self {
