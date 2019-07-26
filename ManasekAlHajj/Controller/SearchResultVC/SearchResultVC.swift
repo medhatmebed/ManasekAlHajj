@@ -20,6 +20,9 @@ class SearchResultVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "نتيجة البحث"
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailsVC {

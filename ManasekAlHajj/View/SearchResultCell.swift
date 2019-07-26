@@ -15,6 +15,8 @@ class SearchResultCell: UITableViewCell {
     @IBOutlet weak var phoneNumberLbl: UILabel!
     @IBOutlet weak var mokhayamLbl: UILabel!
     @IBOutlet weak var streetLbl: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         initializeCell()
@@ -27,6 +29,7 @@ class SearchResultCell: UITableViewCell {
         self.phoneNumberLbl.text = "الهاتف"
         self.streetLbl.text = "الشارع"
         self.mokhayamLbl.text = "المخيم"
+        self.containerView.roundCornersWithBorder(borderWidth: 1, borderColor: .lightGray, radius: 7, isClips: true)
     }
     
     func feedCell(officeGroupAppartment : OfficeGroupAppartment){

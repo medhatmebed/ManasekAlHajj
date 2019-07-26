@@ -11,7 +11,7 @@ import Alamofire
 
 //Client Info
 let G_BASE_URL = "http://35.176.210.80/TaskeenAPI/api/Taskeen/"
-
+let APP_ROUND_BUTTON_CORNER_RADIUS : CGFloat = 10
 
 struct ApiPath {
     //POST Methods
@@ -23,5 +23,4 @@ struct ApiPath {
     static var GET_DIRECTION_TYPES = "getDirectionTypes"
     static var GET_DIRECTIONS = "getDirections"
     static var GET_GROUP_APPARTMENTS = "getOfficeGroupAppartments"
-    
 }

@@ -12,7 +12,6 @@ import IQDropDownTextField
 class HomeVC: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
-    
     @IBOutlet weak var mashaerTxtField: IQDropDownTextField!
     @IBOutlet weak var directionTypesTxtField: IQDropDownTextField!
     @IBOutlet weak var directionsTxtField: IQDropDownTextField!
@@ -20,7 +19,6 @@ class HomeVC: UIViewController {
     @IBOutlet weak var contractorTxtField: UITextField!
     @IBOutlet weak var phoneTxtField: UITextField!
     @IBOutlet weak var nationalityTxtField: UITextField!
-    
     @IBOutlet weak var searchBtn: UIButton!
     
     var mashaerArray : [String]? = [""] {
@@ -48,8 +46,8 @@ class HomeVC: UIViewController {
             }
         }
     }
-    var directionsIds = [Int]()
     
+    var directionsIds = [Int]()
     var selectedmashaerId = ""
     var selectedDirectionTypesId = ""
     var selectedDirectionsId = ""
@@ -61,22 +59,28 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupTextFieldsPicker()
         self.homeVCRepo.delegate = self
-        
+        setRounConrner()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
             self.homeVCRepo.getMashaer()
         }
         
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "جمعية الكشافة العربية السعودية"
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationItem.title = "الرئيسية"
     }
     
     private func setupTextFieldsPicker() {
         mashaerTxtField.isOptionalDropDown = false
         directionTypesTxtField.isOptionalDropDown = false
         directionsTxtField.isOptionalDropDown = false
+    }
+    private func setRounConrner() {
+        searchBtn.roundCornersWithBorder(borderWidth: 1, borderColor: .lightGray, radius: 20, isClips: true)
+        containerView.roundCornersWithBorder(borderWidth: 1, borderColor: .lightGray, radius: 10, isClips: true)
     }
     
     @IBAction func searchBtnPressed(_ sender: UIButton) {
