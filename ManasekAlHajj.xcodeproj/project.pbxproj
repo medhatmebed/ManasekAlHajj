@@ -21,8 +21,8 @@
 		8B9026E522E95F3B003EC1A4 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026E022E95F3B003EC1A4 /* UIColor+Extensions.swift */; };
 		8B9026E622E95F3B003EC1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026E122E95F3B003EC1A4 /* AppDelegate.swift */; };
 		8B9026F922E95F54003EC1A4 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026E822E95F54003EC1A4 /* Direction.swift */; };
-		8B9026FA22E95F54003EC1A4 /* OfficeGroupApartments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026E922E95F54003EC1A4 /* OfficeGroupApartments.swift */; };
-		8B9026FB22E95F54003EC1A4 /* DirectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026EA22E95F54003EC1A4 /* DirectionTypes.swift */; };
+		8B9026FA22E95F54003EC1A4 /* OfficeGroupApartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026E922E95F54003EC1A4 /* OfficeGroupApartment.swift */; };
+		8B9026FB22E95F54003EC1A4 /* DirectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026EA22E95F54003EC1A4 /* DirectionType.swift */; };
 		8B9026FC22E95F54003EC1A4 /* Mashaer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026EB22E95F54003EC1A4 /* Mashaer.swift */; };
 		8B9026FD22E95F54003EC1A4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026ED22E95F54003EC1A4 /* HomeVC.swift */; };
 		8B9026FE22E95F54003EC1A4 /* HomeVCRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9026EE22E95F54003EC1A4 /* HomeVCRepo.swift */; };
@@ -49,8 +49,8 @@
 		8B9026E022E95F3B003EC1A4 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		8B9026E122E95F3B003EC1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9026E822E95F54003EC1A4 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		8B9026E922E95F54003EC1A4 /* OfficeGroupApartments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeGroupApartments.swift; sourceTree = "<group>"; };
-		8B9026EA22E95F54003EC1A4 /* DirectionTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTypes.swift; sourceTree = "<group>"; };
+		8B9026E922E95F54003EC1A4 /* OfficeGroupApartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeGroupApartment.swift; sourceTree = "<group>"; };
+		8B9026EA22E95F54003EC1A4 /* DirectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionType.swift; sourceTree = "<group>"; };
 		8B9026EB22E95F54003EC1A4 /* Mashaer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mashaer.swift; sourceTree = "<group>"; };
 		8B9026ED22E95F54003EC1A4 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8B9026EE22E95F54003EC1A4 /* HomeVCRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCRepo.swift; sourceTree = "<group>"; };
@@ -182,9 +182,9 @@
 		8B9026E722E95F54003EC1A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8B9026E922E95F54003EC1A4 /* OfficeGroupApartments.swift */,
+				8B9026E922E95F54003EC1A4 /* OfficeGroupApartment.swift */,
 				8B9026E822E95F54003EC1A4 /* Direction.swift */,
-				8B9026EA22E95F54003EC1A4 /* DirectionTypes.swift */,
+				8B9026EA22E95F54003EC1A4 /* DirectionType.swift */,
 				8B9026EB22E95F54003EC1A4 /* Mashaer.swift */,
 			);
 			path = Model;
@@ -353,9 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9026FB22E95F54003EC1A4 /* DirectionTypes.swift in Sources */,
+				8B9026FB22E95F54003EC1A4 /* DirectionType.swift in Sources */,
 				8B9026FC22E95F54003EC1A4 /* Mashaer.swift in Sources */,
-				8B9026FA22E95F54003EC1A4 /* OfficeGroupApartments.swift in Sources */,
+				8B9026FA22E95F54003EC1A4 /* OfficeGroupApartment.swift in Sources */,
 				8B9026E622E95F3B003EC1A4 /* AppDelegate.swift in Sources */,
 				8B9026FE22E95F54003EC1A4 /* HomeVCRepo.swift in Sources */,
 				8B1585C422EAA24300D4788C /* MapVC.swift in Sources */,
