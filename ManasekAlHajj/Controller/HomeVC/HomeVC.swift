@@ -100,20 +100,17 @@ extension HomeVC : IQDropDownTextFieldDelegate, IQDropDownTextFieldDataSource {
         if textField == self.mashaerTxtField {
             for index in 1...(mashaerArray?.count ?? 0) - 1 where mashaerArray?[index] == item {
                 self.selectedmashaerId = String(mashaerIds[index - 1])
-                print("selected Mashaer Id is \(selectedmashaerId)")
             }
         }
         else if textField == self.directionTypesTxtField {
             for index in 1...(directionTypes?.count ?? 0) - 1 where directionTypes?[index] == item {
                 self.selectedDirectionTypesId = String(directionTypeIds[index - 1])
                 self.homeVCRepo.getDirections(directionTypeId: directionTypeIds[index - 1])
-                print("selected Mashaer Id is \(selectedDirectionTypesId)")
             }
         }
         else if textField == self.directionsTxtField {
             for index in 1...(directions?.count ?? 0) - 1 where directions?[index] == item {
                 self.selectedDirectionsId = String(directionsIds[index - 1])
-                print("selected Mashaer Id is \(selectedDirectionsId)")
             }
         }
     }
@@ -148,7 +145,7 @@ extension HomeVC : HomeVCRepoDelegate {
         print(error)
     }
     
-    func getDirectionsSuccess(directions: [Directions]) {
+    func getDirectionsSuccess(directions: [Direction]) {
         self.directions = [""]
         self.directionsIds.removeAll()
         for item in directions {

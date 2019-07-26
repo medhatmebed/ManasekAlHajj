@@ -72,7 +72,7 @@ struct GetDirectionTypes : Requestable {
 struct GetDirections : Requestable {
     var apiPath: String { return ApiPath.GET_DIRECTIONS }
     var httpType: HTTPMethod { return .post }
-    var ref: ResponseParser.Type { return Directions.self}
+    var ref: ResponseParser.Type { return Direction.self}
     var parametersType: REQUEST_PARAM_TYPE { return .Body }
     var pathType: ServicePath
 }

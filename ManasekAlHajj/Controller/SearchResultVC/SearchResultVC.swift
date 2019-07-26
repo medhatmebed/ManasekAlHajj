@@ -13,11 +13,18 @@ class SearchResultVC: UIViewController {
     @IBOutlet weak var resultTableView: UITableView!
     
     var officeGroupAppartment = [OfficeGroupAppartment]()
+    var officeGroup : OfficeGroupAppartment?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsVC {
+            destination.officeGroupAppartment = self.officeGroup
+        }
     }
  
 
@@ -32,6 +39,11 @@ extension SearchResultVC : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchResultCell") as? SearchResultCell
         cell?.feedCell(officeGroupAppartment: officeGroupAppartment[indexPath.row])
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.officeGroup = officeGroupAppartment[indexPath.row]
+        performSegue(withIdentifier: "goToDetails", sender: nil)
     }
     
     

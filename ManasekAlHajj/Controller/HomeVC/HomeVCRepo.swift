@@ -14,7 +14,7 @@ protocol HomeVCRepoDelegate : class {
     func getMashaerFail(error : String)
     func getDirectionTypesSuccess(directiontypes : [DirectionType])
     func getDirectionTypesFail(error : String)
-    func getDirectionsSuccess(directions : [Directions])
+    func getDirectionsSuccess(directions : [Direction])
     func getDirectionsFail(error : String)
     func getOfficeGroupAppartmentsSuccess(officGroupAppartments : [OfficeGroupAppartment])
     func getOfficeGroupAppartmentsSuccessFail(error : String)
@@ -82,7 +82,7 @@ class HomeVCRepo : WebserviceDataProtocol {
                 #endif
                 self.delegate?.getDirectionsFail(error: error)
             }
-            if let response = data as? [Directions] {
+            if let response = data as? [Direction] {
                 print(response)
                 self.delegate?.getDirectionsSuccess(directions: response)
             } else {

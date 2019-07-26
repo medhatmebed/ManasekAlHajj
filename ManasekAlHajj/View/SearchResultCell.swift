@@ -31,11 +31,10 @@ class SearchResultCell: UITableViewCell {
     
     func feedCell(officeGroupAppartment : OfficeGroupAppartment){
         self.officeGroupNameLbl.text = officeGroupAppartment.officeGroupName
-        self.nationalityLbl.text = "الجنسية" + (officeGroupAppartment.nationalityName ?? " ")
-        self.phoneNumberLbl.text = "الهاتف" + (officeGroupAppartment.phone ?? "")
-        self.mokhayamLbl.text = "المخيم" + (officeGroupAppartment.mokhaiam ?? "")
-        self.streetLbl.text = "الشارع" + (officeGroupAppartment.street ?? "")
-        
+        self.nationalityLbl.text = "الجنسية: " + (officeGroupAppartment.nationalityName ?? "")
+        self.phoneNumberLbl.text = "الهاتف: " + (officeGroupAppartment.phone ?? "")
+        self.mokhayamLbl.text = "المخيم: " + (officeGroupAppartment.mokhaiam ?? "")
+        self.streetLbl.text = "الشارع: " + (officeGroupAppartment.street ?? "")
     }
 
 }

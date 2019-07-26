@@ -518,57 +518,57 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-IR-5dB">
-                                                    <rect key="frame" x="30" y="23" width="354" height="92"/>
+                                                    <rect key="frame" x="25" y="17" width="364" height="104"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Dy-W7-YIF">
-                                                            <rect key="frame" x="6" y="6" width="342" height="79.5"/>
+                                                            <rect key="frame" x="6" y="6" width="352" height="91.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2uh-S0-kOX">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="28.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="352" height="43.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مقر ضيوف وزارة الحج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-m3-ePj">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="18.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مقر ضيوف وزارة الحج" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-m3-ePj">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="352" height="33.5"/>
                                                                             <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
                                                                             <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qni-PH-Grg">
-                                                                            <rect key="frame" x="0.0" y="26.5" width="342" height="2"/>
+                                                                            <rect key="frame" x="0.0" y="41.5" width="352" height="2"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="2" id="ihr-0R-3dN"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-74-tmL">
-                                                                    <rect key="frame" x="0.0" y="36.5" width="342" height="17.5"/>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-74-tmL">
+                                                                    <rect key="frame" x="0.0" y="51.5" width="352" height="16"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbT-aJ-Qfe">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="17.5"/>
-                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-47-LXA">
-                                                                            <rect key="frame" x="171" y="0.0" width="171" height="17.5"/>
-                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <rect key="frame" x="176" y="0.0" width="176" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-Lw-KtT">
-                                                                    <rect key="frame" x="0.0" y="62" width="342" height="17.5"/>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-Lw-KtT">
+                                                                    <rect key="frame" x="0.0" y="75.5" width="352" height="16"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zq-l1-WTa">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="17.5"/>
-                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-gJ-aAA">
-                                                                            <rect key="frame" x="171" y="0.0" width="171" height="17.5"/>
-                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="16"/>
+                                                                            <rect key="frame" x="176" y="0.0" width="176" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="15"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -593,10 +593,10 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uKk-IR-5dB" secondAttribute="bottom" constant="12" id="dq7-ch-UYm"/>
-                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="top" secondItem="RjG-IH-cth" secondAttribute="topMargin" constant="12" id="ejA-Yf-XV3"/>
-                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="leading" secondItem="RjG-IH-cth" secondAttribute="leadingMargin" constant="10" id="f2M-M8-Ags"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uKk-IR-5dB" secondAttribute="trailing" constant="10" id="x8n-eY-wY7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uKk-IR-5dB" secondAttribute="bottom" constant="6" id="dq7-ch-UYm"/>
+                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="top" secondItem="RjG-IH-cth" secondAttribute="topMargin" constant="6" id="ejA-Yf-XV3"/>
+                                                <constraint firstItem="uKk-IR-5dB" firstAttribute="leading" secondItem="RjG-IH-cth" secondAttribute="leadingMargin" constant="5" id="f2M-M8-Ags"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uKk-IR-5dB" secondAttribute="trailing" constant="5" id="x8n-eY-wY7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -625,45 +625,295 @@
                     </view>
                     <connections>
                         <outlet property="resultTableView" destination="0UI-kW-zqx" id="vaZ-hr-Rx0"/>
-                        <segue destination="3RP-h6-oPd" kind="show" id="VsZ-2M-mQi"/>
+                        <segue destination="3RP-h6-oPd" kind="show" identifier="goToDetails" id="VsZ-2M-mQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba5-vd-LLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1814.4927536231885" y="111.83035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="Tgm-ol-fGP">
             <objects>
-                <viewController id="3RP-h6-oPd" sceneMemberID="viewController">
+                <viewController id="3RP-h6-oPd" customClass="DetailsVC" customModule="ManasekAlHajj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1O-lD-2VC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yb-e8-nOX">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSx-eZ-rw0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbX-zh-Nbf">
+                                                <rect key="frame" x="23" y="21" width="368" height="324"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-pl-WsH">
+                                                        <rect key="frame" x="8" y="20" width="350" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-8l-eyN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="289" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="TPj-nG-Qpv"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحملة:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zer-Ta-m3b">
+                                                                <rect key="frame" x="290" y="0.0" width="60" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="DXN-Sc-bju"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="uBt-FP-iza"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="czU-fe-JMR">
+                                                        <rect key="frame" x="8" y="72" width="350" height="221"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WDA-Zt-Y1U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-et-l4a">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المسئول:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx9-O1-tKD">
+                                                                        <rect key="frame" x="277" y="0.0" width="73" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="73" id="w1C-bG-sdC"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-bv-gTe">
+                                                                <rect key="frame" x="0.0" y="40.5" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDi-xU-dRo">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="289" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الهاتف:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlr-CS-hCG">
+                                                                        <rect key="frame" x="290" y="0.0" width="60" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="60" id="YUW-L9-tQZ"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-I8-WhI">
+                                                                <rect key="frame" x="0.0" y="81" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVu-SS-n1r">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="283" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المخيم:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-kO-86g">
+                                                                        <rect key="frame" x="285" y="0.0" width="65" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="65" id="cZv-z2-sNi"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-Ls-bMG">
+                                                                <rect key="frame" x="0.0" y="121.5" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-bt-14d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الشارع:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJB-NP-D4g">
+                                                                        <rect key="frame" x="295" y="0.0" width="55" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="55" id="aq2-dt-8qZ"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-ke-hyw">
+                                                                <rect key="frame" x="0.0" y="162" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-Jf-bEh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاحداثيات:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-7l-eyq">
+                                                                        <rect key="frame" x="265" y="0.0" width="85" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="85" id="mpt-h3-Zcs"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PhX-vr-IzG">
+                                                                <rect key="frame" x="0.0" y="202.5" width="350" height="18.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUA-8f-Pay">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="233" height="18.5"/>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الموقع الحالي:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTM-uD-ODf">
+                                                                        <rect key="frame" x="235" y="0.0" width="115" height="18.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="115" id="nUv-YU-p3i"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="k7z-pl-WsH" firstAttribute="leading" secondItem="IbX-zh-Nbf" secondAttribute="leading" constant="8" id="7Dj-Kj-J0h"/>
+                                                    <constraint firstItem="czU-fe-JMR" firstAttribute="width" secondItem="k7z-pl-WsH" secondAttribute="width" id="7lW-CB-qzj"/>
+                                                    <constraint firstItem="k7z-pl-WsH" firstAttribute="top" secondItem="IbX-zh-Nbf" secondAttribute="top" constant="20" id="8RO-S6-xgb"/>
+                                                    <constraint firstItem="czU-fe-JMR" firstAttribute="leading" secondItem="k7z-pl-WsH" secondAttribute="leading" id="Bh9-HE-VmR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="k7z-pl-WsH" secondAttribute="trailing" constant="10" id="KAS-Sq-V07"/>
+                                                    <constraint firstItem="czU-fe-JMR" firstAttribute="trailing" secondItem="k7z-pl-WsH" secondAttribute="trailing" id="vy1-Y1-yNJ"/>
+                                                    <constraint firstItem="czU-fe-JMR" firstAttribute="top" secondItem="k7z-pl-WsH" secondAttribute="bottom" constant="12" id="zFM-T4-pGN"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-DP-neU">
+                                                <rect key="frame" x="23" y="389" width="368" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-5b-wdk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169" height="50"/>
+                                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.5568627451" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="24"/>
+                                                        <state key="normal" title="المسار" image="Direction btn icon">
+                                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-9Z-IfY">
+                                                        <rect key="frame" x="199" y="0.0" width="169" height="50"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="24"/>
+                                                        <size key="titleShadowOffset" width="20" height="20"/>
+                                                        <state key="normal" title="الموقع" image="location icon button">
+                                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2Cj-jg-WpI"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eoh-DP-neU" secondAttribute="trailing" constant="23" id="2Ce-SE-kx8"/>
+                                            <constraint firstItem="eoh-DP-neU" firstAttribute="leading" secondItem="tSx-eZ-rw0" secondAttribute="leading" constant="23" id="Gqj-WI-H7e"/>
+                                            <constraint firstItem="eoh-DP-neU" firstAttribute="top" secondItem="IbX-zh-Nbf" secondAttribute="bottom" constant="44" id="R3c-fU-tbv"/>
+                                            <constraint firstItem="IbX-zh-Nbf" firstAttribute="leading" secondItem="tSx-eZ-rw0" secondAttribute="leading" constant="23" id="Ugb-wl-qI1"/>
+                                            <constraint firstItem="eoh-DP-neU" firstAttribute="top" secondItem="tSx-eZ-rw0" secondAttribute="top" constant="389" id="aqT-9n-wWG"/>
+                                            <constraint firstAttribute="trailing" secondItem="IbX-zh-Nbf" secondAttribute="trailing" constant="23" id="quv-GW-Ch9"/>
+                                            <constraint firstItem="IbX-zh-Nbf" firstAttribute="top" secondItem="tSx-eZ-rw0" secondAttribute="top" constant="21" id="w2D-fq-vYd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tSx-eZ-rw0" secondAttribute="trailing" id="MYB-bn-bdG"/>
+                                    <constraint firstItem="tSx-eZ-rw0" firstAttribute="leading" secondItem="9yb-e8-nOX" secondAttribute="leading" id="Vrv-I7-wGN"/>
+                                    <constraint firstItem="tSx-eZ-rw0" firstAttribute="height" secondItem="9yb-e8-nOX" secondAttribute="height" priority="250" id="ZsL-K3-fAx"/>
+                                    <constraint firstItem="tSx-eZ-rw0" firstAttribute="top" secondItem="9yb-e8-nOX" secondAttribute="top" id="gZP-Bv-LXb"/>
+                                    <constraint firstItem="tSx-eZ-rw0" firstAttribute="width" secondItem="9yb-e8-nOX" secondAttribute="width" id="kob-h4-OyN"/>
+                                    <constraint firstAttribute="bottom" secondItem="tSx-eZ-rw0" secondAttribute="bottom" id="xWd-H0-6Rv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9yb-e8-nOX" firstAttribute="top" secondItem="nc8-uW-daI" secondAttribute="top" id="Jhd-U6-lqm"/>
+                            <constraint firstItem="9yb-e8-nOX" firstAttribute="leading" secondItem="nc8-uW-daI" secondAttribute="leading" id="e3A-CV-x5W"/>
+                            <constraint firstItem="9yb-e8-nOX" firstAttribute="trailing" secondItem="nc8-uW-daI" secondAttribute="trailing" id="tEw-13-rHc"/>
+                            <constraint firstAttribute="bottom" secondItem="9yb-e8-nOX" secondAttribute="bottom" id="yVf-92-pbJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nc8-uW-daI"/>
                     </view>
                     <connections>
-                        <segue destination="KO5-KM-mw3" kind="show" id="tLV-iA-q4D"/>
+                        <outlet property="coordinatesLbl" destination="tJk-Jf-bEh" id="DPF-Ri-q5J"/>
+                        <outlet property="currentLocationLbl" destination="LUA-8f-Pay" id="JGg-kk-Xq1"/>
+                        <outlet property="directionBtn" destination="zQH-5b-wdk" id="zCJ-Vd-AXG"/>
+                        <outlet property="locationBtn" destination="AZa-9Z-IfY" id="yfO-BP-Xre"/>
+                        <outlet property="mokhaiamLbl" destination="DVu-SS-n1r" id="1PE-3D-kSi"/>
+                        <outlet property="officeAppartmentNameLbl" destination="jl0-8l-eyN" id="fny-bV-rmx"/>
+                        <outlet property="phoneLbl" destination="qDi-xU-dRo" id="xke-Iu-bS6"/>
+                        <outlet property="reponsibleName" destination="r5g-et-l4a" id="DoH-YL-Kqu"/>
+                        <outlet property="streetLbl" destination="lYq-bt-14d" id="WPQ-ea-zi9"/>
+                        <segue destination="KO5-KM-mw3" kind="show" identifier="goToLocation" id="tLV-iA-q4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4h-hw-fjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664" y="113"/>
+            <point key="canvasLocation" x="2662.3188405797105" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="icG-GD-FkD">
             <objects>
-                <viewController id="KO5-KM-mw3" sceneMemberID="viewController">
+                <viewController id="KO5-KM-mw3" customClass="MapVC" customModule="ManasekAlHajj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LAZ-jB-LbT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lTW-DK-IvL">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KO5-KM-mw3" id="2q9-9Z-WBH"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lTW-DK-IvL" firstAttribute="top" secondItem="WrX-RL-YqK" secondAttribute="top" id="3yi-Fv-wZl"/>
+                            <constraint firstItem="lTW-DK-IvL" firstAttribute="leading" secondItem="WrX-RL-YqK" secondAttribute="leading" id="J8e-rN-vrl"/>
+                            <constraint firstAttribute="bottom" secondItem="lTW-DK-IvL" secondAttribute="bottom" id="h5g-1j-NRU"/>
+                            <constraint firstItem="lTW-DK-IvL" firstAttribute="trailing" secondItem="WrX-RL-YqK" secondAttribute="trailing" id="ynI-sv-V87"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WrX-RL-YqK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKC-Mu-O1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3596" y="120"/>
+            <point key="canvasLocation" x="3599" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7W9-mf-NGK">
@@ -686,7 +936,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Direction btn icon" width="42" height="38"/>
         <image name="Kaabah" width="414" height="896"/>
         <image name="dropdown" width="16" height="19"/>
+        <image name="location icon button" width="27" height="45"/>
     </resources>
 </document>

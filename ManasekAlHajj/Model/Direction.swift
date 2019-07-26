@@ -2,7 +2,7 @@
 import Foundation
 
 // MARK: - Direction
-struct Directions: Codable, ResponseParser  {
+struct Direction: Codable, ResponseParser  {
     let directionID, directionTypeID: Int?
     let directionName: String?
     
@@ -16,7 +16,7 @@ struct Directions: Codable, ResponseParser  {
         if let jsonDict = json as? ([[String : AnyObject]]) {
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: jsonDict)
-                let decodedResponseInfo = try JSONDecoder().decode([Directions].self, from: jsonData)
+                let decodedResponseInfo = try JSONDecoder().decode([Direction].self, from: jsonData)
                 #if DEBUG
                 print(decodedResponseInfo)
                 #endif
